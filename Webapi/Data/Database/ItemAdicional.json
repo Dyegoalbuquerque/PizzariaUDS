@@ -1,0 +1,57 @@
+[
+  {
+    "Nome": "Extra bacon",
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 1
+    },
+    "TempoDePreparo": 0,
+    "Id": 1
+  },
+  {
+    "Nome": "Borda recheada",
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 2
+    },
+    "TempoDePreparo": 5,
+    "Id": 2
+  },
+  {
+    "Nome": "Borda recheada",
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 13
+    },
+    "TempoDePreparo": 5,
+    "Id": 3
+  },
+  {
+    "Nome": "Borda recheada",
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 23
+    },
+    "TempoDePreparo": 5,
+    "Id": 4
+  },
+  {
+    "Nome": "Borda recheada",
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 27
+    },
+    "TempoDePreparo": 5,
+    "Id": 5
+  }
+]

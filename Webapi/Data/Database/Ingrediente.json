@@ -1,0 +1,111 @@
+[
+    {
+        "Id": 1, "Nome": "1 tablete de fermento biológico fresco (15g)"
+    },
+    {
+        "Id": 2, "Nome": "1 xícara (chá) de água morna"
+    },
+    {
+        "Id": 3, "Nome": "2 colheres (sopa) de óleo ou azeite"
+    },
+    {
+        "Id": 4, "Nome": "1 colher (chá) de sal"
+    },
+    {
+        "Id": 5, "Nome": "1/2 xícara (chá) de farinha integral"
+    },
+    {
+        "Id": 6, "Nome": "2 e 1/2 xícaras (chá) de farinha de trigo (aproximadamente)"
+    },
+    {
+        "Id": 7, "Nome": "Farinha de trigo para polvilhar"
+    },
+    {
+        "Id": 8, "Nome": "100g de requeijão tipo Catupiry® para rechear a borda"
+    },
+    {
+        "Id": 9, "Nome": "Óleo para untar"
+    },
+    {
+        "Id": 10, "Nome": "1/2 xícara (chá) de molho de tomate caseiro"
+    },
+    {
+        "Id": 11, "Nome": "200g de queijo mussarela ralado"
+    },
+    {
+        "Id": 12, "Nome": "2 gomos de linguiça calabresa fatiada"
+    },
+    {
+        "Id": 13, "Nome": "1 cebola fatiada"
+    },
+    {
+        "Id": 14, "Nome": "12 azeitonas verdes miúdas para decorar"
+    },
+    {
+        "Id": 15, "Nome": "Orégano seco a gosto para polvilhar"
+    },
+
+    {
+        "Id": 16, "Nome": "2 xícaras (chá) de farinha de trigo"
+    },
+    {
+        "Id": 17, "Nome": "1 colher (sopa) de fermento em pó"
+    },
+    {
+        "Id": 18, "Nome": "1 xícara (chá) de água"
+    },
+    {
+        "Id": 19, "Nome": "4 colheres (sopa) de óleo"
+    },
+    {
+        "Id": 20, "Nome": "150 g de queijo mussarela"
+    },
+    {
+        "Id": 21, "Nome": "50 g de presunto"
+    },
+    {
+        "Id": 22, "Nome": "1 tomate em rodelas"
+    },
+    {
+        "Id": 23, "Nome": "1 ovo cozido"
+    },
+    {
+        "Id": 24, "Nome": "1 cebola picada"
+    },
+    {
+        "Id": 25, "Nome": "Molho de tomate"
+    },
+    {
+        "Id": 26, "Nome": "Azeitonas para decorar, orégano e tempero verde a gosto."
+    },
+    
+
+    
+    {
+        "Id": 27, "Nome": "400 g de farinha de trigo"
+    },
+    {
+        "Id": 28, "Nome": "1 xícara (chá) de água morna"
+    },
+    {
+        "Id": 29, "Nome": "15 g / 1 tablete de fermento, biológico"
+    },
+    {
+        "Id": 30, "Nome": "1 colher (chá) de sal"
+    },
+    {
+        "Id": 31, "Nome": "1 (copo) de molho de tomate pronto"
+    },
+    {
+        "Id": 32, "Nome": "400 g de mussarela, peça inteira"
+    },
+    {
+        "Id": 33, "Nome": "5 tomates"
+    },
+    {
+        "Id": 34, "Nome": "Manjericão a gosto"
+    },
+    {
+        "Id": 35, "Nome": "Azeite o quanto baste"
+    }
+]
