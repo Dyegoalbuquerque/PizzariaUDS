@@ -11,7 +11,8 @@
       "Id": 3
     },
     "Descricao": "Faça uma cova no meio da farinha depois de peneirada com o fermento e o sal. Acrescente a água e o óleo. Amasse bem e abra com o rolo, formando uma massa lisa. JUnte uma fôrma para pizza (grande) e modele a massa dentro. Despeje sobre a massa um pouco de molho de tomate, cubra com queijo e presunto. Em seguida coloque as fatias de tomate, o ovo picado e a cebola. Decore com azeitonas, tempere com orégano e tempero verde e leve ao forno pré-aquecido por 20 minutos, ou até a massa ficar assada.",
-    "Tamanho": "G",
+    "Tamanho": 1,
+    "Inativo": false,
     "TempoDePreparo": 25,
     "ModoPreparoIngredientes": [
       {
@@ -104,7 +105,8 @@
       "Id": 4
     },
     "Descricao": "Faça uma cova no meio da farinha depois de peneirada com o fermento e o sal. Acrescente a água e o óleo. Amasse bem e abra com o rolo, formando uma massa lisa. JUnte uma fôrma para pizza (média) e modele a massa dentro. Despeje sobre a massa um pouco de molho de tomate, cubra com queijo e presunto. Em seguida coloque as fatias de tomate, o ovo picado e a cebola. Decore com azeitonas, tempere com orégano e tempero verde e leve ao forno pré-aquecido por 20 minutos, ou até a massa ficar assada.",
-    "Tamanho": "M",
+    "Tamanho": 2,
+    "Inativo": false,
     "TempoDePreparo": 20,
     "ModoPreparoIngredientes": [
       {
@@ -188,16 +190,17 @@
   {
     "Sabor": {
       "Nome": null,
-      "Id": 5
+      "Id": 1
     },
     "ItemPreco": {
       "DataCadastro": "0001-01-01T00:00:00",
       "Tipo": 0,
       "Valor": 0.0,
-      "Id": 1
+      "Id": 5
     },
     "Descricao": "Faça uma cova no meio da farinha depois de peneirada com o fermento e o sal. Acrescente a água e o óleo. Amasse bem e abra com o rolo, formando uma massa lisa. JUnte uma fôrma para pizza (pequena) e modele a massa dentro. Despeje sobre a massa um pouco de molho de tomate, cubra com queijo e presunto. Em seguida coloque as fatias de tomate, o ovo picado e a cebola. Decore com azeitonas, tempere com orégano e tempero verde e leve ao forno pré-aquecido por 20 minutos, ou até a massa ficar assada.",
-    "Tamanho": "P",
+    "Tamanho": 3,
+    "Inativo": false,
     "TempoDePreparo": 15,
     "ModoPreparoIngredientes": [
       {
@@ -281,16 +284,17 @@
   {
     "Sabor": {
       "Nome": null,
-      "Id": 6
+      "Id": 2
     },
     "ItemPreco": {
       "DataCadastro": "0001-01-01T00:00:00",
       "Tipo": 0,
       "Valor": 0.0,
-      "Id": 1
+      "Id": 6
     },
     "Descricao": "Dissolva o fermento na água morna, adicione o óleo, o sal e misture. Acrescente as farinhas, aos poucos, mexendo com uma colher até soltar da lateral da vasilha. Sove por 5 minutos ou até obter uma massa lisa e macia. Forme uma bola, cubra e deixe descansar por 1 hora ou até dobrar de volume. Abra a massa com a ajuda de um rolo sobre uma superfície enfarinhada, formando um disco de 32cm de diâmetro. Com ajuda de um saco de confeiteiro faça um fio de requeijão em todo o diâmetro da borda, dobre a massa fazendo a borda recheada. Transfira para uma assadeira untada e fure ligeiramente com um garfo. Espalhe o molho e leve ao forno alto, preaquecido, por 10 minutos. Cubra com a mussarela, a calabresa e a cebola. Asse por mais 10 minutos ou até dourar levemente. Decore com azeitonas, polvilhe com orégano e sirva.",
-    "Tamanho": "G",
+    "Tamanho": 1,
+    "Inativo": false,
     "TempoDePreparo": 25,
     "ModoPreparoIngredientes": [
       {
@@ -354,16 +358,17 @@
   {
     "Sabor": {
       "Nome": null,
-      "Id": 7
+      "Id": 2
     },
     "ItemPreco": {
       "DataCadastro": "0001-01-01T00:00:00",
       "Tipo": 0,
       "Valor": 0.0,
-      "Id": 1
+      "Id": 7
     },
     "Descricao": "Dissolva o fermento na água morna, adicione o óleo, o sal e misture. Acrescente as farinhas, aos poucos, mexendo com uma colher até soltar da lateral da vasilha. Sove por 5 minutos ou até obter uma massa lisa e macia. Forme uma bola, cubra e deixe descansar por 1 hora ou até dobrar de volume. Abra a massa com a ajuda de um rolo sobre uma superfície enfarinhada, formando um disco de 20cm de diâmetro. Com ajuda de um saco de confeiteiro faça um fio de requeijão em todo o diâmetro da borda, dobre a massa fazendo a borda recheada. Transfira para uma assadeira untada e fure ligeiramente com um garfo. Espalhe o molho e leve ao forno alto, preaquecido, por 10 minutos. Cubra com a mussarela, a calabresa e a cebola. Asse por mais 10 minutos ou até dourar levemente. Decore com azeitonas, polvilhe com orégano e sirva.",
-    "Tamanho": "M",
+    "Tamanho": 2,
+    "Inativo": false,
     "TempoDePreparo": 20,
     "ModoPreparoIngredientes": [
       {
@@ -427,16 +432,17 @@
   {
     "Sabor": {
       "Nome": null,
-      "Id": 8
+      "Id": 2
     },
     "ItemPreco": {
       "DataCadastro": "0001-01-01T00:00:00",
       "Tipo": 0,
       "Valor": 0.0,
-      "Id": 1
+      "Id": 8
     },
     "Descricao": "Dissolva o fermento na água morna, adicione o óleo, o sal e misture. Acrescente as farinhas, aos poucos, mexendo com uma colher até soltar da lateral da vasilha. Sove por 5 minutos ou até obter uma massa lisa e macia. Forme uma bola, cubra e deixe descansar por 1 hora ou até dobrar de volume. Abra a massa com a ajuda de um rolo sobre uma superfície enfarinhada, formando um disco de 12cm de diâmetro. Com ajuda de um saco de confeiteiro faça um fio de requeijão em todo o diâmetro da borda, dobre a massa fazendo a borda recheada. Transfira para uma assadeira untada e fure ligeiramente com um garfo. Espalhe o molho e leve ao forno alto, preaquecido, por 10 minutos. Cubra com a mussarela, a calabresa e a cebola. Asse por mais 10 minutos ou até dourar levemente. Decore com azeitonas, polvilhe com orégano e sirva.",
-    "Tamanho": "P",
+    "Tamanho": 3,
+    "Inativo": false,
     "TempoDePreparo": 15,
     "ModoPreparoIngredientes": [
       {
@@ -500,17 +506,18 @@
   {
     "Sabor": {
       "Nome": null,
-      "Id": 9
+      "Id": 3
     },
     "ItemPreco": {
       "DataCadastro": "0001-01-01T00:00:00",
       "Tipo": 0,
       "Valor": 0.0,
-      "Id": 1
+      "Id": 9
     },
     "Descricao": "Num recipiente, dissolva o fermento num pouco de água e deixe descansar por 5 minutos. Misture a farinha e o sal numa bacia. Faça um buraco no centro, adicione o fermento dissolvido e, aos poucos, a água morna. Misture tudo com as mãos até formar uma massa lisa.Se for preciso, acrescente mais farinha. Trabalhe a massa por cerca de 15 minutos. Faça uma bola e deixe descansar numa vasilha coberta com papel filme por 1 hora, ou até que a massa dobre de volume. Para saber quando cresceu o suficiente, coloque uma bolinha (de 2 cm) da própria massa dentro de um copo de água, quando subir à superfície está pronta para a próxima etapa. Em seguida, trabalhe a massa vigorosamente por mais 10 minutos. Divida em quatro bolas iguais (para pizzas grandes) e deixe crescer por mais 1 hora. Está pronta para abrir e assar.",
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
+    "Tamanho": 1,
+    "Inativo": false,
+    "TempoDePreparo": 30,
     "ModoPreparoIngredientes": [
       {
         "ModoPreparoId": 0,
@@ -563,17 +570,18 @@
   {
     "Sabor": {
       "Nome": null,
-      "Id": 10
+      "Id": 3
     },
     "ItemPreco": {
       "DataCadastro": "0001-01-01T00:00:00",
       "Tipo": 0,
       "Valor": 0.0,
-      "Id": 1
+      "Id": 10
     },
     "Descricao": "Num recipiente, dissolva o fermento num pouco de água e deixe descansar por 5 minutos. Misture a farinha e o sal numa bacia. Faça um buraco no centro, adicione o fermento dissolvido e, aos poucos, a água morna. Misture tudo com as mãos até formar uma massa lisa.Se for preciso, acrescente mais farinha. Trabalhe a massa por cerca de 15 minutos. Faça uma bola e deixe descansar numa vasilha coberta com papel filme por 1 hora, ou até que a massa dobre de volume. Para saber quando cresceu o suficiente, coloque uma bolinha (de 2 cm) da própria massa dentro de um copo de água, quando subir à superfície está pronta para a próxima etapa. Em seguida, trabalhe a massa vigorosamente por mais 10 minutos. Divida em quatro bolas iguais (para pizzas médias) e deixe crescer por mais 1 hora. Está pronta para abrir e assar.",
-    "Tamanho": "M",
-    "TempoDePreparo": 20,
+    "Tamanho": 2,
+    "Inativo": false,
+    "TempoDePreparo": 25,
     "ModoPreparoIngredientes": [
       {
         "ModoPreparoId": 0,
@@ -626,17 +634,18 @@
   {
     "Sabor": {
       "Nome": null,
-      "Id": 11
+      "Id": 3
     },
     "ItemPreco": {
       "DataCadastro": "0001-01-01T00:00:00",
       "Tipo": 0,
       "Valor": 0.0,
-      "Id": 1
+      "Id": 11
     },
     "Descricao": "Num recipiente, dissolva o fermento num pouco de água e deixe descansar por 5 minutos. Misture a farinha e o sal numa bacia. Faça um buraco no centro, adicione o fermento dissolvido e, aos poucos, a água morna. Misture tudo com as mãos até formar uma massa lisa.Se for preciso, acrescente mais farinha. Trabalhe a massa por cerca de 15 minutos. Faça uma bola e deixe descansar numa vasilha coberta com papel filme por 1 hora, ou até que a massa dobre de volume. Para saber quando cresceu o suficiente, coloque uma bolinha (de 2 cm) da própria massa dentro de um copo de água, quando subir à superfície está pronta para a próxima etapa. Em seguida, trabalhe a massa vigorosamente por mais 10 minutos. Divida em quatro bolas iguais (para pizzas pequenas) e deixe crescer por mais 1 hora. Está pronta para abrir e assar.",
-    "Tamanho": "P",
-    "TempoDePreparo": 15,
+    "Tamanho": 3,
+    "Inativo": false,
+    "TempoDePreparo": 20,
     "ModoPreparoIngredientes": [
       {
         "ModoPreparoId": 0,
@@ -685,447 +694,5 @@
       }
     ],
     "Id": 9
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 4
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 12
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 10
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 5
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 14
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 11
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 6
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 12
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 12
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 7
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 12
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 13
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 8
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 14
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 14
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 9
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 16
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 15
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 10
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 18
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 16
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 11
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 20
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 17
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 12
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 12
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 18
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 13
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 12
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 19
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 14
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 12
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 20
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 15
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 13
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 21
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 16
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 14
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 22
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 17
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 15
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 23
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 18
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 16
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 24
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 19
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 17
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 25
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 20
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 18
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 26
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 21
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 19
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 27
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 22
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 20
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 28
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 23
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 21
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 29
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 24
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 22
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 30
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 25
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 24
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 31
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 26
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 25
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 32
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 27
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 26
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 33
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 28
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 28
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 34
-  },
-  {
-    "Sabor": {
-      "Nome": null,
-      "Id": 29
-    },
-    "ItemPreco": {
-      "DataCadastro": "0001-01-01T00:00:00",
-      "Tipo": 0,
-      "Valor": 0.0,
-      "Id": 29
-    },
-    "Descricao": null,
-    "Tamanho": "G",
-    "TempoDePreparo": 25,
-    "ModoPreparoIngredientes": null,
-    "Id": 35
   }
 ]

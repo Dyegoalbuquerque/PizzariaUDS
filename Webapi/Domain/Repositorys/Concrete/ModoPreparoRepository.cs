@@ -24,5 +24,19 @@ namespace Webapi.Domain.Repositorys.Concrete
         {
             return this.Dao.ObterTodos();
         }
+
+        public ModoPreparo BuscarPorTamanhoESabor(int tamanho, int saborId)
+        {
+            var todos = ObterTodos();
+
+            foreach(var item in todos)
+            {
+                if(item.Sabor.Id == saborId && item.Tamanho == tamanho && !item.Inativo)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
     }
 }

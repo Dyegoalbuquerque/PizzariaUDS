@@ -2,12 +2,17 @@ import { ModoPreparo } from './ModoPreparo';
 import { ItemAdicional } from './ItemAdicional';
 
 export class Pedido{    
-    Id: number;      
-    Data: Date;      
-    Status: number;
-    Valor: number;
-    TempoPreparo: number;
-    ModoPreparo: ModoPreparo;
-    Quantidade: number;
-    ItensAdicionais: ItemAdicional[];
+    id: number;      
+    data: Date;      
+    status: number;
+    valor: number;
+    tempoPreparo: number;
+    modoPreparo: ModoPreparo;
+    quantidade: number;
+    itensAdicionais: ItemAdicional[];
+
+    constructor(){
+        this.modoPreparo = new ModoPreparo();
+        this.itensAdicionais = [];
+    }
 }

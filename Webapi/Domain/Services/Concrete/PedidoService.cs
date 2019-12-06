@@ -50,20 +50,26 @@ namespace Webapi.Domain.Services.Concrete
         {
             return this.Repository.BuscarPorId(id);
         }
-
+     
         public Pedido MontarPizza(Pedido item)
         {       
             if(item.Id == 0)
             {
-                var modoPreparo = this.ModoPreparoRepository.BuscarPorId(item.ModoPreparo.Id);
+                int tamanho = item.ModoPreparo.Tamanho;
+                int saborId = item.ModoPreparo.Sabor.Id;
+                var modoPreparo = this.ModoPreparoRepository.BuscarPorTamanhoESabor(tamanho, saborId);
                 var itemPreco = this.ItemPrecoRepository.BuscarPorId(modoPreparo.ItemPreco.Id);
 
+                item.ModoPreparo = new ModoPreparo(){Id = modoPreparo.Id,};
                 item.Data = DateTime.Now;
                 item.Status = (int)StatusPedido.Andamento;
                 item.Quantidade = 1;
-                item.Valor = itemPreco.Valor;
-                item.TempoPreparo = modoPreparo.TempoDePreparo;
+                item.CalcularValor(itemPreco);
+                item.CalcularTempoDePreparo(modoPreparo);
                 item.Id = Adicionar(item);
+
+                item.ModoPreparo.Tamanho = tamanho;
+                item.ModoPreparo.Sabor = new Sabor(){Id = saborId};
 
             }else {
                 throw new PedidoException("Não pode criar um pedido já existente");

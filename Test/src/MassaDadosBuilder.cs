@@ -62,7 +62,7 @@ namespace Test.src
 
             return this;
         }
-        public MassaDadosBuilder MontarModoPreparo(int itemPrecoId, string tamanho, int saborId )
+        public MassaDadosBuilder MontarModoPreparo(int itemPrecoId, int tamanho, int saborId )
         {
             this.ModoPreparo = new ModoPreparo()
                 {

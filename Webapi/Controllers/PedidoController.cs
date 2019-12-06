@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Webapi.Domain.Services.Abstract;
 using Webapi.Entities;
 
@@ -45,6 +47,15 @@ namespace Webapi.Controllers
         public IActionResult Put([FromBody] Pedido item)
         {
             item = this.PedidoService.PersonalizarPizza(item);
+
+            return Ok(item);
+        }
+
+         // PUT api/pedido/5
+        [HttpPut("{id}")]
+        public IActionResult Put([FromBody] Pedido item, int id)
+        {
+            item.Id = this.PedidoService.Atualizar(item);
 
             return Ok(item);
         }

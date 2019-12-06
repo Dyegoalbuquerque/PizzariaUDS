@@ -62,7 +62,7 @@ namespace Webapi.Test.src.steps
            this.MassaBuilder.MontarSabor("Baiana");
            this.MassaBuilder.Sabor.Id = this.SaborRepository.Adicionar(this.MassaBuilder.Sabor);
 
-           this.MassaBuilder.MontarModoPreparo(itemPreco.Id, "G", this.MassaBuilder.Sabor.Id); 
+           this.MassaBuilder.MontarModoPreparo(itemPreco.Id, (int)TamanhoPizza.Grande, this.MassaBuilder.Sabor.Id); 
            var modoPreparoId = this.ModoPreparoRepository.Adicionar(this.MassaBuilder.ModoPreparo);
            this.MassaBuilder.ModoPreparo.Id = modoPreparoId;  
 

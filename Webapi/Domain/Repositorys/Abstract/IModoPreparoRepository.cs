@@ -9,5 +9,6 @@ namespace Webapi.Domain.Repositorys.Abstract
            ModoPreparo BuscarPorId(int id);
            int Adicionar(ModoPreparo item);
            List<ModoPreparo> ObterTodos();
+           ModoPreparo BuscarPorTamanhoESabor(int tamanho, int saborId);
     }
 }

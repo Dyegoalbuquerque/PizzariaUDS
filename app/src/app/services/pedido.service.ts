@@ -12,21 +12,29 @@ export class PedidoService {
   constructor(private httpclient: HttpClient) { }    
     
   GetAll():Observable<Pedido[]>{    
-  return this.httpclient.get<Pedido[]>(this.ApiUrl);    
+    return this.httpclient.get<Pedido[]>(this.ApiUrl);    
   }    
     
   GetById(Id:string):Observable<Pedido>{    
     return this.httpclient.get<Pedido>(this.ApiUrl+'/'+Id);    
   }    
   Insert(pedido:Pedido){    
-   return this.httpclient.post<Pedido>(this.ApiUrl,pedido);    
+    return this.httpclient.post<Pedido>(this.ApiUrl,pedido);    
   }    
     
   Update(pedido:Pedido):Observable<Pedido>{    
     return this.httpclient.put<Pedido>(this.ApiUrl,pedido);    
   }    
+
+  UpdateWithId(pedido:Pedido, id: number):Observable<Pedido>{    
+    return this.httpclient.put<Pedido>(this.ApiUrl+'/'+id,pedido);    
+  } 
     
   Delete(Id:string){    
     return this.httpclient.delete(this.ApiUrl+'/'+Id);    
-  } 
+  }
+
+  Validate(pedido: Pedido): boolean{
+    return pedido.modoPreparo.sabor.id > 0 && pedido.modoPreparo.tamanho > 0;   
+  }
 }

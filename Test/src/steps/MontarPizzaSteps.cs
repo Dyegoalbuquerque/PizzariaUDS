@@ -58,7 +58,7 @@ namespace Test.src.steps
            var saborId = this.SaborRepository.Adicionar(this.MassaBuilder.Sabor);
            this.MassaBuilder.Sabor.Id = saborId;
 
-           this.MassaBuilder.MontarModoPreparo(itemPrecoId, "G", saborId); 
+           this.MassaBuilder.MontarModoPreparo(itemPrecoId, (int)TamanhoPizza.Grande, saborId); 
            var modoPreparoId = this.ModoPreparoRepository.Adicionar(this.MassaBuilder.ModoPreparo);
            this.MassaBuilder.ModoPreparo.Id = modoPreparoId;
 

@@ -1,8 +1,8 @@
 import {ItemPreco} from './ItemPreco';
 
 export class ItemAdicional{
-     Id: number;   
-     Nome: string;
-     ItemPreco :ItemPreco;
-     TempoDePreparo: number;
+     id: number;   
+     nome: string;
+     itemPreco :ItemPreco;
+     tempoDePreparo: number;
 }

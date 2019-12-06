@@ -299,7 +299,7 @@
 
 <div class="content" role="main">
 
-    <mat-horizontal-stepper #stepper>
+    <mat-horizontal-stepper #stepper [linear]="naoPodeAvancar">
         
         <mat-step [stepControl]="firstFormGroup">
             <div class="container">         
@@ -309,22 +309,22 @@
             <h2 class="example-h2"><i>Qual tamanho da pizza ?</i></h2>
             <br/>
             <br/>
-            <mat-radio-group aria-label="Select an option">
-                <mat-radio-button value="1" [checked]="true"><b>Grande R$ 40</b> <i> (preparo 15 minutos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></mat-radio-button>
-                <mat-radio-button value="2"><b>Média R$ 30</b> <i> (preparo 20 minutos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></mat-radio-button>
-                <mat-radio-button value="3"><b>Pequena R$ 20</b> <i> (preparo 25 minutos)</i></mat-radio-button>
+            <mat-radio-group aria-label="Select an option" (change)="SelectTamanho()" [(ngModel)]="pedido.modoPreparo.tamanho" [ngModelOptions]="{standalone: true}">
+                <mat-radio-button [value]="1"  [checked]="true"><b>Grande R$ 40</b> <i> (preparo 25 minutos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></mat-radio-button>
+                <mat-radio-button [value]="2"><b>Média R$ 30</b> <i> (preparo 20 minutos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></mat-radio-button>
+                <mat-radio-button [value]="3"><b>Pequena R$ 20</b> <i> (preparo 15 minutos)</i></mat-radio-button>
             </mat-radio-group>            
             <div>
             <br/>
             <br/>
             <h2 class="example-h2"><i>Qual sabor da pizza ?</i></h2>
                                    
-            <mat-radio-group aria-label="Select an option" >
-                <mat-radio-button  *ngFor="let sabor of saborList" [checked]="sabor.id == 1" [value]="sabor.id" >
-                  <b>{{sabor.nome}}</b>&nbsp;&nbsp;<i>{{sabor.observacao}}</i>
+            <mat-radio-group aria-label="Select an option" (change)="SelectSabor()" [(ngModel)]="pedido.modoPreparo.sabor.id" [ngModelOptions]="{standalone: true}">
+                <mat-radio-button  *ngFor="let item of saborList" [value]="item.id" >
+                  <b>{{item.nome}}</b>&nbsp;&nbsp;<i>{{item.observacao}}</i>
                   <br/> <br/>
                   <mat-card>
-                      <img class="img-sabor" src="{{sabor.urlImagem}}" alt="">                    
+                      <img class="img-sabor" src="{{item.urlImagem}}" alt="">                    
                   </mat-card> 
                 </mat-radio-button>
             </mat-radio-group> 
@@ -332,7 +332,7 @@
             <br/>
             <br/>
             <br/>
-            <button mat-button matStepperNext>Avançar</button>
+            <button mat-button matStepperNext (click)="ClickAvancar()">Avançar</button>
             </div>
           </form>
           </div>
@@ -347,22 +347,22 @@
                 <h2 class="example-h2"><i>Personalize sua pizza a seu gosto e torne única</i></h2>
                 <br/>
                 <br/>
-                <mat-radio-group aria-label="Select an option" >
-                    <mat-radio-button  *ngFor="let item of itensAdicionais" [value]="item.id" >
-                      <b>{{item.nome}} &nbsp;&nbsp;<i>R$ {{item.itemPreco.valor}}</i></b>
-                      <br/> <br/>
-                      <mat-card>
-                          <img class="img-adicional" src="{{item.urlImagem}}" alt="">                    
-                      </mat-card> 
-                    </mat-radio-button>
-                </mat-radio-group>           
+                <section class="example-section">
+                    <mat-checkbox class="example-margin" [(ngModel)]="itemAdicional.id"  *ngFor="let item of itensAdicionais" [ngModelOptions]="{standalone: true}" [value]="item.id">
+                        <b>{{item.nome}} &nbsp;&nbsp;<i>R$ {{item.itemPreco.valor}}</i></b>
+                        <br/> 
+                        <br/>
+                        <mat-card class="img-adicional">
+                            <img class="img-adicional" src="{{item.urlImagem}}" alt="">                    
+                        </mat-card> 
+                    </mat-checkbox>
+                  </section>          
                 <div>
                 <br/>
                 <br/>
                 <br/>
                 <br/>
                 <div>
-                  <button mat-button matStepperPrevious>Voltar</button>
                   <button mat-button matStepperNext>Avançar</button>
                 </div>
                 </div>
