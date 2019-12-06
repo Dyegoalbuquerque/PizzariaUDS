@@ -1,0 +1,21 @@
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+
+.example-card {
+  max-width: 250px;
+  max-height: 300px;
+  padding-left: 2px;
+  padding-left: 2px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+ 
+}
+
+.resumo-card {
+  max-width: 500px;
+  max-height: 600px;
+}
