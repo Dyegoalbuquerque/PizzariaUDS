@@ -3,6 +3,8 @@ import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { SaborService } from './services/sabor.service';
 import { Sabor } from './models/Sabor';
+import { ItemAdicionalService } from './services/item-adicional.service';
+import { ItemAdicional } from './models/ItemAdicional';
 
 
 @Component({
@@ -14,9 +16,11 @@ export class AppComponent  implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   threeFormGroup: FormGroup;
-  SaborList:Sabor[];
+  saborList:Sabor[];
+  itensAdicionais:ItemAdicional[];
 
-  constructor(private _formBuilder: FormBuilder, private saborService: SaborService) {}
+  constructor(private _formBuilder: FormBuilder, private saborService: SaborService, 
+              private itemAdicionalService: ItemAdicionalService) {}
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
@@ -30,9 +34,14 @@ export class AppComponent  implements OnInit {
     });
 
     this.GetAllSabores();
+    this.GetAllItensAdicionais();
   }
 
   GetAllSabores(){          
-    this.saborService.GetSabores().subscribe(data=>{this.SaborList=data; console.log(this.SaborList);});    
+    this.saborService.GetAll().subscribe(data=>{this.saborList=data; console.log(this.saborList);});    
  } 
+
+ GetAllItensAdicionais(){          
+  this.itemAdicionalService.GetAll().subscribe(data=>{this.itensAdicionais=data; console.log(this.itensAdicionais);});    
+} 
 }

@@ -1,14 +1,20 @@
 [
   {
     "Nome": "Calabresa",
-    "Id": 1
+    "Id": 1,
+    "UrlImagem": "https://receitinhas.s3-sa-east-1.amazonaws.com/wp-content/uploads/2017/08/pizza-de-calabresa-e-queijo-848x477.jpg",
+    "Observacao": ""
   },
   {
     "Nome": "Marguerita",
-    "Id": 2
+    "Id": 2,
+    "UrlImagem": "https://portal-amb-imgs.clubedaana.com.br/2016/11/pizza-picture-id181175167-600x400.jpg",
+    "Observacao": ""
   },
   {
     "Nome": "Portuguesa",
-    "Id": 3
+    "Id": 3,
+    "UrlImagem": "https://img.itdg.com.br/tdg/images/recipes/000/062/161/14806/14806_original.jpg?mode=crop&amp;width=710&amp;height=400",
+    "Observacao": "tempo adicional de 5 minutos"
   }
 ]

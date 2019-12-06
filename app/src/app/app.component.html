@@ -300,7 +300,9 @@
 <div class="content" role="main">
 
     <mat-horizontal-stepper #stepper>
+        
         <mat-step [stepControl]="firstFormGroup">
+            <div class="container">         
           <form [formGroup]="firstFormGroup">                 
             <ng-template matStepLabel>Escolha sua pizza</ng-template>
             
@@ -308,53 +310,23 @@
             <br/>
             <br/>
             <mat-radio-group aria-label="Select an option">
-                <mat-radio-button value="1" [checked]="true"><b>Grande R$ 40,00</b> <i> (preparo 15 minutos)</i></mat-radio-button>
-                <mat-radio-button value="2"><b>Média R$ 30,00</b> <i> (preparo 20 minutos)</i></mat-radio-button>
-                <mat-radio-button value="3"><b>Pequena R$ 20,00</b> <i> (preparo 25 minutos)</i></mat-radio-button>
+                <mat-radio-button value="1" [checked]="true"><b>Grande R$ 40</b> <i> (preparo 15 minutos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></mat-radio-button>
+                <mat-radio-button value="2"><b>Média R$ 30</b> <i> (preparo 20 minutos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></mat-radio-button>
+                <mat-radio-button value="3"><b>Pequena R$ 20</b> <i> (preparo 25 minutos)</i></mat-radio-button>
             </mat-radio-group>            
             <div>
             <br/>
             <br/>
             <h2 class="example-h2"><i>Qual sabor da pizza ?</i></h2>
-            <mat-grid-list cols="3">
-                <mat-grid-tile>                  
-                    <mat-card class="example-card">
-                        
-                        <img mat-card-image src="https://receitinhas.s3-sa-east-1.amazonaws.com/wp-content/uploads/2017/08/pizza-de-calabresa-e-queijo-848x477.jpg" alt="Photo of a Shiba Inu">
-                        <mat-card-content>
-                          
-                        </mat-card-content>
-                      </mat-card>
-                </mat-grid-tile>
-
-                <mat-grid-tile>
-                    <mat-card class="example-card">
-                        <img mat-card-image src="https://img.itdg.com.br/tdg/images/recipes/000/062/161/14806/14806_original.jpg?mode=crop&amp;width=710&amp;height=400" alt="Photo of a Shiba Inu">
-                        <mat-card-content>
-                          
-                        </mat-card-content>
-                      </mat-card>
-                </mat-grid-tile>
-
-                <mat-grid-tile>
-                    <mat-card class="example-card">
-                        <img mat-card-image src="https://portal-amb-imgs.clubedaana.com.br/2016/11/pizza-picture-id181175167-600x400.jpg" alt="Photo of a Shiba Inu">
-                        <mat-card-content>
-                         
-                        </mat-card-content>
-                      </mat-card>
-                </mat-grid-tile>
-            </mat-grid-list>   
-            <mat-radio-group aria-label="Select an option">
-                <mat-radio-button value="4" [checked]="true">
-                  <b>Calabresa
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  </b>
+                                   
+            <mat-radio-group aria-label="Select an option" >
+                <mat-radio-button  *ngFor="let sabor of saborList" [checked]="sabor.id == 1" [value]="sabor.id" >
+                  <b>{{sabor.nome}}</b>&nbsp;&nbsp;<i>{{sabor.observacao}}</i>
+                  <br/> <br/>
+                  <mat-card>
+                      <img class="img-sabor" src="{{sabor.urlImagem}}" alt="">                    
+                  </mat-card> 
                 </mat-radio-button>
-                <mat-radio-button value="5"><b>Portuguesa</b> <i> (adicional de 5 minutos)&nbsp;&nbsp;&nbsp;&nbsp;</i></mat-radio-button>
-                <mat-radio-button value="6"><b>Marguerita</b></mat-radio-button>
             </mat-radio-group> 
             <br/>
             <br/>
@@ -363,9 +335,11 @@
             <button mat-button matStepperNext>Avançar</button>
             </div>
           </form>
+          </div>
         </mat-step>
         <mat-divider></mat-divider>
         <mat-step [stepControl]="secondFormGroup">
+            <div class="container">
             <form [formGroup]="secondFormGroup">
                 <br/>     
                 <ng-template matStepLabel>Personalize sua pizza</ng-template>
@@ -373,11 +347,15 @@
                 <h2 class="example-h2"><i>Personalize sua pizza a seu gosto e torne única</i></h2>
                 <br/>
                 <br/>
-                <mat-radio-group aria-label="Select an option">
-                    <mat-radio-button value="1"><b>Extra bacon R$ 3,00</b></mat-radio-button>
-                    <mat-radio-button value="2"><b>Borda recheada R$ 5,00</b></mat-radio-button>
-                    <mat-radio-button value="3"><b>Sem cebola </b></mat-radio-button>
-                  </mat-radio-group>            
+                <mat-radio-group aria-label="Select an option" >
+                    <mat-radio-button  *ngFor="let item of itensAdicionais" [value]="item.id" >
+                      <b>{{item.nome}} &nbsp;&nbsp;<i>R$ {{item.itemPreco.valor}}</i></b>
+                      <br/> <br/>
+                      <mat-card>
+                          <img class="img-adicional" src="{{item.urlImagem}}" alt="">                    
+                      </mat-card> 
+                    </mat-radio-button>
+                </mat-radio-group>           
                 <div>
                 <br/>
                 <br/>
@@ -389,11 +367,14 @@
                 </div>
                 </div>
             </form>
+          </div>
           </mat-step>
         <mat-step>
           <ng-template matStepLabel>Finalizar pedido</ng-template>
-          <mat-card class="resumo-card">
+          <div class="container">
+            <mat-card class="resumo-card">
                         
+            <h2 class="example-h2"><i>Resumo do pedido</i></h2>
               <img mat-card-image src="https://receitinhas.s3-sa-east-1.amazonaws.com/wp-content/uploads/2017/08/pizza-de-calabresa-e-queijo-848x477.jpg" alt="Photo of a Shiba Inu">
               <mat-card-content>
                 <h3>Calabresa</h3> Grande - <i>tempo de preparo estimado 25 minutos</i>
@@ -410,12 +391,14 @@
                     </mat-chip-list>
               </mat-card-content>
             </mat-card>
+          </div>
             <br/>
           <div>
             <button mat-button matStepperPrevious>Voltar</button>
             <button mat-button (click)="stepper.reset()">Finalizar</button>
           </div>
         </mat-step>
+        
       </mat-horizontal-stepper>
   
 

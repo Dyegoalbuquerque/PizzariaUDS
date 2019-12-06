@@ -3,17 +3,26 @@
 }
 
 
-.example-card {
-  max-width: 250px;
+.img-sabor{
+  max-width: 220px;
   max-height: 300px;
   padding-left: 2px;
   padding-left: 2px;
 }
 
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
- 
+.img-adicional{
+  max-width: 50px;
+  max-height: 50px;
+  padding-left: 2px;
+  padding-left: 2px;
 }
+.container {
+          display: flex;
+           flex-direction: row;
+           justify-content: center;
+           align-items: center
+     }
+
 
 .resumo-card {
   max-width: 500px;
