@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {MaterialModule} from './material-module';
-
+import { HttpClientModule, /* other http imports */ } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +15,7 @@ import {MaterialModule} from './material-module';
   imports: [
     BrowserModule,
     AppRoutingModule, MatStepperModule, FormsModule,
-    ReactiveFormsModule, MaterialModule,
+    ReactiveFormsModule, MaterialModule,HttpClientModule,
     BrowserAnimationsModule
   ],
   providers: [],

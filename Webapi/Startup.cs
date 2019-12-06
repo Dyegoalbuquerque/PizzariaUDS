@@ -36,11 +36,9 @@ namespace Webapi
             services.AddTransient<IModoPreparoRepository, ModoPreparoRepository>();
             services.AddTransient<IPedidoRepository, PedidoRepository>();
             services.AddTransient<ISaborRepository, SaborRepository>();
-            services.AddTransient<IItemRemovivelRepository, ItemRemovivelRepository>();
             services.AddTransient<IModoPreparoIngredienteRepository, ModoPreparoIngredienteRepository>();
             services.AddTransient<IIngredienteService, IngredienteService>();
             services.AddTransient<IItemAdicionalService, ItemAdicionalService>();
-            services.AddTransient<IItemRemovivelService, ItemRemovivelService>();
             services.AddTransient<IItemPrecoService, ItemPrecoService>();
             services.AddTransient<IModoPreparoService, ModoPreparoService>();
             services.AddTransient<IPedidoService, PedidoService>();
