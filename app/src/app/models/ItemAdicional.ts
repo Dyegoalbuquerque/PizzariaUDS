@@ -5,4 +5,5 @@ export class ItemAdicional{
      nome: string;
      itemPreco :ItemPreco;
      tempoDePreparo: number;
+
 }

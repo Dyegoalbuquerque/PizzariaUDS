@@ -9,7 +9,9 @@ namespace Webapi.Data
 {
     public class Dao<T> where T : Entity
     {
-        public static string Caminho = $"Data/Database/";//$"../../../../Webapi/Data/Database/";
+        private static string producao = $"Data/Database/";
+        private static string teste = $"../../../../Webapi/Data/Database/";
+        public static string Caminho = producao;
         public Dao()
         {
             this.Fonte = $"{Caminho}{typeof(T).Name}.json";
@@ -36,15 +38,15 @@ namespace Webapi.Data
          public int Atualizar(T item)  
         {   
                 var todos = ObterTodos();  
-
+                int count =todos.Count;
                 if(item != null && todos.Any())
                 {                   
-                    for(int i = 0; i < todos.Count; i++)
+                    for(int i = 0; i < count; i++)
                     {
                         if(todos.ElementAt(i).Id == item.Id)
                         {
-                            var objeto = todos.ElementAt(i);
-                            objeto = item;
+                            todos.RemoveAt(i);
+                            todos.Add(item);
                         }
                     }                    
                 }else{

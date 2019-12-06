@@ -15,7 +15,7 @@ export class PedidoService {
     return this.httpclient.get<Pedido[]>(this.ApiUrl);    
   }    
     
-  GetById(Id:string):Observable<Pedido>{    
+  GetById(Id:number):Observable<Pedido>{    
     return this.httpclient.get<Pedido>(this.ApiUrl+'/'+Id);    
   }    
   Insert(pedido:Pedido){    
@@ -25,10 +25,6 @@ export class PedidoService {
   Update(pedido:Pedido):Observable<Pedido>{    
     return this.httpclient.put<Pedido>(this.ApiUrl,pedido);    
   }    
-
-  UpdateWithId(pedido:Pedido, id: number):Observable<Pedido>{    
-    return this.httpclient.put<Pedido>(this.ApiUrl+'/'+id,pedido);    
-  } 
     
   Delete(Id:string){    
     return this.httpclient.delete(this.ApiUrl+'/'+Id);    

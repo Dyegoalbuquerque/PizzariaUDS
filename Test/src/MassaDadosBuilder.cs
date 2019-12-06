@@ -13,11 +13,16 @@ namespace Test.src
         public ModoPreparo ModoPreparo {get; set;}
         public List<ItemAdicional> ItensAdicionais {get; set;}
         public List<ItemPreco> ItensPrecos { get; set; }
-        public MassaDadosBuilder MontarPedido(int modoPreparoId)
+        public MassaDadosBuilder MontarPedido(int modoPreparoId, int saborId, int tamanho)
         {
             this.Pedido = new Pedido()
             {
-                ModoPreparo = new ModoPreparo(){ Id = modoPreparoId}
+                ModoPreparo = new ModoPreparo()
+                { 
+                    Id = modoPreparoId, 
+                    Sabor = new Sabor(){ Id = saborId },
+                    Tamanho = tamanho
+                }
             };
             return this;
         }  

@@ -19,5 +19,10 @@ namespace Webapi.Domain.Repositorys.Concrete
         {
             this.Dao.RemoverPorId(id);
         }
+
+        public Sabor BuscarPorId(int id)
+        {
+            return this.Dao.BuscarPorId(id);
+        }
     }
 }

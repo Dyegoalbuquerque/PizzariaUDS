@@ -12,5 +12,6 @@ export class ModoPreparo{
 
      constructor(){
           this.sabor = new Sabor();
+          this.itemPreco = new ItemPreco();
      }
 }

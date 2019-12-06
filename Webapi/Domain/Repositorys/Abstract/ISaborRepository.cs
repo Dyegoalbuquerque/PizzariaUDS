@@ -8,5 +8,6 @@ namespace Webapi.Domain.Repositorys.Abstract
          void RemoverPorId(int id);
          int Adicionar(Sabor item);
          List<Sabor> ObterTodos();
+       Sabor BuscarPorId(int id);
     }
 }

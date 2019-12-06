@@ -62,7 +62,7 @@ namespace Test.src.steps
            var modoPreparoId = this.ModoPreparoRepository.Adicionar(this.MassaBuilder.ModoPreparo);
            this.MassaBuilder.ModoPreparo.Id = modoPreparoId;
 
-           this.MassaBuilder.MontarPedido(modoPreparoId);                 
+           this.MassaBuilder.MontarPedido(modoPreparoId, saborId, (int)TamanhoPizza.Grande);                 
         }
 
         [When(@"sistema monta a pizza")]

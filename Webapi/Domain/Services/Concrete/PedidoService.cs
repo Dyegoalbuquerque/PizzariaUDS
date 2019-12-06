@@ -17,14 +17,18 @@ namespace Webapi.Domain.Services.Concrete
 
         private IItemPrecoRepository ItemPrecoRepository {get; set;}
 
+        private ISaborRepository SaborRepository {get; set;}
+
         private IItemAdicionalRepository ItemAdicionalRepository {get; set;}
         public PedidoService(IPedidoRepository repository, IModoPreparoRepository modoPreparoRepository, 
-                             IItemPrecoRepository itemPrecoRepository, IItemAdicionalRepository itemAdicionalRepository)
+                             IItemPrecoRepository itemPrecoRepository, IItemAdicionalRepository itemAdicionalRepository,
+                             ISaborRepository saborRepository)
         {
             this.Repository = repository;
             this.ModoPreparoRepository = modoPreparoRepository;
             this.ItemPrecoRepository = itemPrecoRepository;
             this.ItemAdicionalRepository = itemAdicionalRepository;
+            this.SaborRepository = saborRepository;
         }
 
         public int Adicionar(Pedido item)
@@ -80,6 +84,7 @@ namespace Webapi.Domain.Services.Concrete
 
         public Pedido PersonalizarPizza(Pedido item)
         {
+
             if(item.Id > 0)
             {
                 var pedido = this.Repository.BuscarPorId(item.Id);
@@ -90,10 +95,22 @@ namespace Webapi.Domain.Services.Concrete
                 var itensAdicionais = this.ItemAdicionalRepository.BuscarPorIds(itemAdicionalIds);
                 
                 var itemPrecoIds = itensAdicionais.Select(i => i.ItemPreco).Select(i => i.Id).ToList();
-                var itensPrecos = this.ItemPrecoRepository.BuscarPorIds(itemPrecoIds);
+                var itensPrecosTotais = this.ItemPrecoRepository.BuscarPorIds(itemPrecoIds);
+                var itemPrecoDaPizza = this.ItemPrecoRepository.BuscarPorId(modoPreparo.ItemPreco.Id);
+                var sabor = this.SaborRepository.BuscarPorId(modoPreparo.Sabor.Id);
                 
-                pedido.Valor += itensPrecos.Sum(i => i.Valor);
+                foreach(var i in itensAdicionais)
+                {
+                    i.ItemPreco = itensPrecosTotais.Single(ia => ia.Id == i.ItemPreco.Id);
+                }
+
+                pedido.Valor += itensPrecosTotais.Sum(i => i.Valor);
                 pedido.TempoPreparo += itensAdicionais.Sum(i => i.TempoDePreparo);
+                pedido.ItensAdicionais = item.ItensAdicionais;
+                pedido.ModoPreparo = modoPreparo;
+                pedido.ModoPreparo.Sabor = sabor;
+                pedido.ModoPreparo.ItemPreco = itemPrecoDaPizza;
+                pedido.ItensAdicionais = itensAdicionais;
 
                 Atualizar(pedido);
 

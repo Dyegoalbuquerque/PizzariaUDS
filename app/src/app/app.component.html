@@ -309,8 +309,8 @@
             <h2 class="example-h2"><i>Qual tamanho da pizza ?</i></h2>
             <br/>
             <br/>
-            <mat-radio-group aria-label="Select an option" (change)="SelectTamanho()" [(ngModel)]="pedido.modoPreparo.tamanho" [ngModelOptions]="{standalone: true}">
-                <mat-radio-button [value]="1"  [checked]="true"><b>Grande R$ 40</b> <i> (preparo 25 minutos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></mat-radio-button>
+            <mat-radio-group aria-label="" (change)="SelectTamanho()" [(ngModel)]="pedido.modoPreparo.tamanho" [ngModelOptions]="{standalone: true}">
+                <mat-radio-button [value]="1"><b>Grande R$ 40</b> <i> (preparo 25 minutos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></mat-radio-button>
                 <mat-radio-button [value]="2"><b>Média R$ 30</b> <i> (preparo 20 minutos)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></mat-radio-button>
                 <mat-radio-button [value]="3"><b>Pequena R$ 20</b> <i> (preparo 15 minutos)</i></mat-radio-button>
             </mat-radio-group>            
@@ -321,7 +321,7 @@
                                    
             <mat-radio-group aria-label="Select an option" (change)="SelectSabor()" [(ngModel)]="pedido.modoPreparo.sabor.id" [ngModelOptions]="{standalone: true}">
                 <mat-radio-button  *ngFor="let item of saborList" [value]="item.id" >
-                  <b>{{item.nome}}</b>&nbsp;&nbsp;<i>{{item.observacao}}</i>
+                  <b>{{item?.nome}}</b>&nbsp;&nbsp;<i>{{item?.observacao}}</i>
                   <br/> <br/>
                   <mat-card>
                       <img class="img-sabor" src="{{item.urlImagem}}" alt="">                    
@@ -332,7 +332,7 @@
             <br/>
             <br/>
             <br/>
-            <button mat-button matStepperNext (click)="ClickAvancar()">Avançar</button>
+            <button mat-button matStepperNext (click)="ClickAvancarMontarPizza()">Avançar</button>
             </div>
           </form>
           </div>
@@ -348,8 +348,8 @@
                 <br/>
                 <br/>
                 <section class="example-section">
-                    <mat-checkbox class="example-margin" [(ngModel)]="itemAdicional.id"  *ngFor="let item of itensAdicionais" [ngModelOptions]="{standalone: true}" [value]="item.id">
-                        <b>{{item.nome}} &nbsp;&nbsp;<i>R$ {{item.itemPreco.valor}}</i></b>
+                    <mat-checkbox class="example-margin" [(ngModel)]="itensAdicionaisCheck[i]"  *ngFor="let item of itensAdicionais; let i = index" [ngModelOptions]="{standalone: true}" [value]="item.id">
+                        <span><b>{{item.nome}} &nbsp;&nbsp;<i>R$ {{item.itemPreco.valor}}</i></b></span>
                         <br/> 
                         <br/>
                         <mat-card class="img-adicional">
@@ -363,39 +363,37 @@
                 <br/>
                 <br/>
                 <div>
-                  <button mat-button matStepperNext>Avançar</button>
+                  <button mat-button matStepperNext  (click)="ClickAvancarPersonalizarPizza()">Avançar</button>
                 </div>
                 </div>
             </form>
           </div>
           </mat-step>
         <mat-step>
+          
           <ng-template matStepLabel>Finalizar pedido</ng-template>
           <div class="container">
             <mat-card class="resumo-card">
                         
-            <h2 class="example-h2"><i>Resumo do pedido</i></h2>
-              <img mat-card-image src="https://receitinhas.s3-sa-east-1.amazonaws.com/wp-content/uploads/2017/08/pizza-de-calabresa-e-queijo-848x477.jpg" alt="Photo of a Shiba Inu">
               <mat-card-content>
-                <h3>Calabresa</h3> Grande - <i>tempo de preparo estimado 25 minutos</i>
+                <h3>{{ShowNomePizza()}}</h3> 
+                <span>{{ShowTamanhoPizza()}}</span>  - <i>tempo de preparo estimado {{pedido.tempoPreparo}} minutos</i>
                 <br/>
                 <br/>
-                - Pizza R$ 40,00
+                <span>- Pizza R$ {{ShowValorPizza()}}</span>
                 <br/>
-                <br/>
-                - Borda recheada R$ 5,00
+                <span *ngFor="let item of pedido.itensAdicionais">- {{item.nome}} R$ {{ShowValorAdicional(item)}} <br/></span>
                 <br/>
                 <br/>
                   <mat-chip-list>
-                      <mat-chip>Total R$ 45,00</mat-chip>
+                      <mat-chip>Total R$ {{pedido.valor}}</mat-chip>
                     </mat-chip-list>
               </mat-card-content>
             </mat-card>
           </div>
             <br/>
           <div>
-            <button mat-button matStepperPrevious>Voltar</button>
-            <button mat-button (click)="stepper.reset()">Finalizar</button>
+            <button mat-button (click)="stepper.reset();Reload();">Finalizar</button>
           </div>
         </mat-step>
         

@@ -51,15 +51,6 @@ namespace Webapi.Controllers
             return Ok(item);
         }
 
-         // PUT api/pedido/5
-        [HttpPut("{id}")]
-        public IActionResult Put([FromBody] Pedido item, int id)
-        {
-            item.Id = this.PedidoService.Atualizar(item);
-
-            return Ok(item);
-        }
-
         // DELETE api/pedido
         [HttpDelete]
         public IActionResult Delete()
