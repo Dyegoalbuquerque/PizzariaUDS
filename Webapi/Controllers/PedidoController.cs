@@ -29,6 +29,10 @@ namespace Webapi.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
+            if(id == 0){
+                return BadRequest();
+            }
+
             var pedido = this.PedidoService.MontarDetalhesPedido(id);
             return Ok(pedido);
         }
@@ -37,6 +41,10 @@ namespace Webapi.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] Pedido item)
         {
+            if(item == null){
+                return BadRequest();
+            }
+
             item = this.PedidoService.MontarPizza(item);
 
             return Created($"api/pedido/{item.Id}", item);
@@ -46,6 +54,10 @@ namespace Webapi.Controllers
         [HttpPut]
         public IActionResult Put([FromBody] Pedido item)
         {
+            if(item == null){
+                return BadRequest();
+            }
+
             item = this.PedidoService.PersonalizarPizza(item);
 
             return Ok(item);
