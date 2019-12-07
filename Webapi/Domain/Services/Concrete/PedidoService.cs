@@ -33,6 +33,10 @@ namespace Webapi.Domain.Services.Concrete
 
         public int Adicionar(Pedido item)
         {
+            if (item == null)
+            {
+                throw new ArgumentNullException("Argumento item não pode ser nulo");
+            }
            return this.Repository.Adicionar(item);
         }
         public List<Pedido> ObterTodos()
@@ -47,6 +51,10 @@ namespace Webapi.Domain.Services.Concrete
 
         public int Atualizar(Pedido item)
         {
+            if (item == null)
+            {
+                throw new ArgumentNullException("Argumento item não pode ser nulo");
+            }
             return this.Repository.Atualizar(item);
         }
 
@@ -56,7 +64,12 @@ namespace Webapi.Domain.Services.Concrete
         }
      
         public Pedido MontarPizza(Pedido item)
-        {       
+        {    
+            if (item == null)
+            {
+                throw new ArgumentNullException("Argumento item não pode ser nulo");
+            }
+
             if(item.Id == 0)
             {
                 int tamanho = item.ModoPreparo.Tamanho;
@@ -83,6 +96,10 @@ namespace Webapi.Domain.Services.Concrete
         }
         public Pedido PersonalizarPizza(Pedido item)
         {
+            if (item == null)
+            {
+                throw new ArgumentNullException("Argumento item não pode ser nulo");
+            }
 
             if(item.Id > 0)
             {
@@ -123,6 +140,11 @@ namespace Webapi.Domain.Services.Concrete
         }
         public Pedido MontarDetalhesPedido(int id)
         {
+            if (id == 0)
+            {
+                throw new ArgumentNullException("Argumento id não pode ser 0");
+            }
+
             var pedido = this.Repository.BuscarPorId(id);
             var adicionais = this.ItemAdicionalRepository.BuscarPorIds(pedido.ItensAdicionais.Select(i => i.Id));
            

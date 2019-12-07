@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 using Webapi.Entities;
+using Webapi.Exceptions;
 
 namespace Webapi.Data
 {
@@ -17,6 +18,18 @@ namespace Webapi.Data
             this.Fonte = $"{Caminho}{typeof(T).Name}.json";
         }
         private string Fonte { get; set; } 
+
+        private void EscreverNoArquivo(object objeto)
+        {
+            try{
+                string serializados = JsonConvert.SerializeObject(objeto, Formatting.Indented);  
+                File.WriteAllText(this.Fonte, serializados);
+            }catch(DirectoryNotFoundException e){
+
+                throw new DAOException($"Caminho do arquivo {typeof(T).Name} não encontrado");
+            } 
+        }
+
         public int Adicionar(T item)  
         {   
                 var todos = ObterTodos();  
@@ -29,8 +42,7 @@ namespace Webapi.Data
                 }
                 todos.Add(item);
 
-                string serializados = JsonConvert.SerializeObject(todos, Formatting.Indented);  
-                File.WriteAllText(this.Fonte, serializados);   
+                EscreverNoArquivo(todos);  
 
                 return item.Id;          
         }  
@@ -38,8 +50,8 @@ namespace Webapi.Data
          public int Atualizar(T item)  
         {   
                 var todos = ObterTodos();  
-                int count =todos.Count;
-                if(item != null && todos.Any())
+                int count = todos.Count;
+                if(todos.Any())
                 {                   
                     for(int i = 0; i < count; i++)
                     {
@@ -49,12 +61,9 @@ namespace Webapi.Data
                             todos.Add(item);
                         }
                     }                    
-                }else{
-                    //lancar excecao
                 }
 
-                string serializados = JsonConvert.SerializeObject(todos, Formatting.Indented);  
-                File.WriteAllText(this.Fonte, serializados);   
+                EscreverNoArquivo(todos);   
 
                 return item.Id;          
         } 
@@ -92,14 +101,13 @@ namespace Webapi.Data
                      break;
                 }
             }
-            string serializados = JsonConvert.SerializeObject(todos, Formatting.Indented);  
-            File.WriteAllText(this.Fonte, serializados); 
+            
+            EscreverNoArquivo(todos); 
         }
-        public void RemoverTodos(){
-            string serializados = JsonConvert.SerializeObject(new List<T>(), Formatting.Indented);  
-            File.WriteAllText(this.Fonte, serializados);
+        public void RemoverTodos()
+        {             
+            EscreverNoArquivo(new List<T>()); 
         }
-
         public List<T> ObterTodos()  
         {  
             var json = File.ReadAllText(this.Fonte);  
