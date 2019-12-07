@@ -26,15 +26,15 @@ namespace Test.src
             };
             return this;
         }  
-        public MassaDadosBuilder MontarPedido(int modoPreparoId, int tempoPreparo, decimal valor)
+        public MassaDadosBuilder MontarPedido(decimal valor, int saborId, ModoPreparo modoPreparo)
         {
             this.Pedido = new Pedido()
             {
-                ModoPreparo = new ModoPreparo(){ Id = modoPreparoId},
+                ModoPreparo = new ModoPreparo(){ Id = modoPreparo.Id, Tamanho = modoPreparo.Tamanho, Sabor = new Sabor(){ Id = saborId}},
                 Valor = valor,
                 Quantidade = 1,
                 Data = DateTime.Now,
-                TempoPreparo = tempoPreparo,
+                TempoPreparo = modoPreparo.TempoDePreparo,
                 Status = (int)StatusPedido.Andamento
             };
             return this;
@@ -52,9 +52,9 @@ namespace Test.src
 
             return this;
         }
-        public MassaDadosBuilder MontarPedido(int modoPreparoId, List<ItemAdicional> itensAdicionais, int tempoPreparo, decimal valorPizza)
+        public MassaDadosBuilder MontarPedido(List<ItemAdicional> itensAdicionais, decimal valorPizza, int saborId, ModoPreparo modoPreparo)
         {
-            MontarPedido(modoPreparoId, tempoPreparo, valorPizza);
+            MontarPedido(valorPizza, saborId, modoPreparo);
 
             List<ItemAdicional> itensAdicionaisLista = new List<ItemAdicional>();
 

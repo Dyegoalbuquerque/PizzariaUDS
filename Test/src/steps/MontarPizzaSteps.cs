@@ -68,7 +68,9 @@ namespace Test.src.steps
         [When(@"sistema monta a pizza")]
         public void WhenSistemaMontaApizza()
         {
-            var service = new PedidoService(this.PedidoRepository, this.ModoPreparoRepository, this.ItemPrecoRepository, this.ItemAdicionalRepository);
+            var service = new PedidoService(this.PedidoRepository, this.ModoPreparoRepository, 
+                                            this.ItemPrecoRepository, this.ItemAdicionalRepository,
+                                            this.SaborRepository);
             
             var controller = new PedidoController(service);
             this.Result = controller.Post(this.MassaBuilder.Pedido); 

@@ -81,7 +81,6 @@ namespace Webapi.Domain.Services.Concrete
 
             return item;
         }
-
         public Pedido PersonalizarPizza(Pedido item)
         {
 
@@ -122,7 +121,6 @@ namespace Webapi.Domain.Services.Concrete
 
             return item;
         }
-
         public Pedido MontarDetalhesPedido(int id)
         {
             var pedido = this.Repository.BuscarPorId(id);

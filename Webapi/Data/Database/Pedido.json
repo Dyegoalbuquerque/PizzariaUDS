@@ -1,0 +1,59 @@
+[
+  {
+    "Status": 1,
+    "Valor": 40.0,
+    "TempoPreparo": 25,
+    "Data": "2019-12-06T20:45:39.029769-03:00",
+    "ModoPreparo": {
+      "Sabor": null,
+      "ItemPreco": null,
+      "Inativo": false,
+      "Descricao": null,
+      "Tamanho": 0,
+      "TempoDePreparo": 0,
+      "ModoPreparoIngredientes": null,
+      "Id": 12
+    },
+    "Quantidade": 1,
+    "ItensAdicionais": null,
+    "Id": 1
+  },
+  {
+    "Status": 1,
+    "Valor": 40.0,
+    "TempoPreparo": 25,
+    "Data": "2019-12-06T20:48:59.566129-03:00",
+    "ModoPreparo": {
+      "Sabor": null,
+      "ItemPreco": null,
+      "Inativo": false,
+      "Descricao": null,
+      "Tamanho": 0,
+      "TempoDePreparo": 0,
+      "ModoPreparoIngredientes": null,
+      "Id": 13
+    },
+    "Quantidade": 1,
+    "ItensAdicionais": null,
+    "Id": 2
+  },
+  {
+    "Status": 1,
+    "Valor": 40.0,
+    "TempoPreparo": 25,
+    "Data": "2019-12-06T20:51:05.050879-03:00",
+    "ModoPreparo": {
+      "Sabor": null,
+      "ItemPreco": null,
+      "Inativo": false,
+      "Descricao": null,
+      "Tamanho": 0,
+      "TempoDePreparo": 0,
+      "ModoPreparoIngredientes": null,
+      "Id": 14
+    },
+    "Quantidade": 1,
+    "ItensAdicionais": null,
+    "Id": 3
+  }
+]

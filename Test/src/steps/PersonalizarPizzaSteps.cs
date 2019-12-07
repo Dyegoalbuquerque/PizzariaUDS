@@ -37,9 +37,12 @@ namespace Test.src.steps
 
         private void Destruir()
         {
-            foreach(var item in this.MassaBuilder.Pedido.ItensAdicionais)
-            {
-                this.ItemAdicionalRepository.RemoverPorId(item.Id);
+            if(this.MassaBuilder.Pedido.ItensAdicionais != null){
+
+                foreach(var item in this.MassaBuilder.Pedido.ItensAdicionais)
+                {
+                    this.ItemAdicionalRepository.RemoverPorId(item.Id);
+                }
             }
             this.PedidoRepository.RemoverPorId(this.MassaBuilder.Pedido.Id);
             this.ModoPreparoRepository.RemoverPorId(this.MassaBuilder.ModoPreparo.Id);
@@ -68,7 +71,7 @@ namespace Test.src.steps
            var modoPreparoId = this.ModoPreparoRepository.Adicionar(this.MassaBuilder.ModoPreparo);
            this.MassaBuilder.ModoPreparo.Id = modoPreparoId;  
 
-           this.MassaBuilder.MontarPedido(this.MassaBuilder.ModoPreparo.Id, this.MassaBuilder.ModoPreparo.TempoDePreparo, itemPreco.Valor);           
+           this.MassaBuilder.MontarPedido(itemPreco.Valor, saborId, this.MassaBuilder.ModoPreparo);           
         }
 
         [Given(@"que personalizou seu pedido adicionando itens tornando única pizza")]
@@ -93,7 +96,9 @@ namespace Test.src.steps
         [When(@"sistema salva a personalizacao do pedido")]
         public void WhenSistemaSalvaAPersonalizacaoDoPedido()
         {
-            var service = new PedidoService(this.PedidoRepository, this.ModoPreparoRepository, this.ItemPrecoRepository, this.ItemAdicionalRepository);
+            var service = new PedidoService(this.PedidoRepository, this.ModoPreparoRepository, 
+                                            this.ItemPrecoRepository, this.ItemAdicionalRepository,
+                                            this.SaborRepository);
             
             var controller = new PedidoController(service);
             this.Result = controller.Put(this.MassaBuilder.Pedido); 
@@ -151,10 +156,12 @@ namespace Test.src.steps
             Assert.IsTrue(semAdicionais);
         }
 
-        [Then(@"sistema salva o pedido")]
+        [When(@"sistema salva o pedido")]
         public void ThenOsistemaSalvaOpedido()
         {
-            var service = new PedidoService(this.PedidoRepository, this.ModoPreparoRepository, this.ItemPrecoRepository, this.ItemAdicionalRepository);
+            var service = new PedidoService(this.PedidoRepository, this.ModoPreparoRepository, 
+                                            this.ItemPrecoRepository, this.ItemAdicionalRepository,
+                                            this.SaborRepository);
             
             var controller = new PedidoController(service);
             this.Result = controller.Post(this.MassaBuilder.Pedido); 

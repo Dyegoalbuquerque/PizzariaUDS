@@ -77,14 +77,18 @@ namespace Webapi.Test.src.steps
                 this.ItemAdicionalRepository.Adicionar(item);
            }
            
-           this.MassaBuilder.MontarPedido(this.MassaBuilder.ModoPreparo.Id, this.MassaBuilder.ItensAdicionais, this.MassaBuilder.ModoPreparo.TempoDePreparo, this.MassaBuilder.ModoPreparo.ItemPreco.Valor);          
+           this.MassaBuilder.MontarPedido(this.MassaBuilder.ItensAdicionais, this.MassaBuilder.ModoPreparo.ItemPreco.Valor, 
+                                          this.MassaBuilder.Sabor.Id, this.MassaBuilder.ModoPreparo);  
+
            this.MassaBuilder.Pedido.Id = this.PedidoRepository.Adicionar(this.MassaBuilder.Pedido);
         }
 
         [When(@"sistema consulta o pedido")]
         public void WhenSistemaConsultaOPedido()
         {
-            var service = new PedidoService(this.PedidoRepository, this.ModoPreparoRepository, this.ItemPrecoRepository, this.ItemAdicionalRepository);
+            var service = new PedidoService(this.PedidoRepository, this.ModoPreparoRepository, 
+                                            this.ItemPrecoRepository, this.ItemAdicionalRepository,
+                                            this.SaborRepository);
             
             var controller = new PedidoController(service);
             this.Result = controller.Get(this.MassaBuilder.Pedido.Id); 
