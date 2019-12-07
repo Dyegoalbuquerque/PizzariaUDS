@@ -9,7 +9,7 @@ Funcionalidade: Montar pedido
         Sendo um cliente​ ​do sistema da pizzaria UDS, eu quero visualizar os detalhes do meu pedido e 
         saber o preço final e o tempo de preparo. 
         O objetivo é saber o quanto irei gastar e em quanto tempo a pizza ficará pronta.
- 
+
 Cenario: Montar pedido para visualizar os detalhes do pedido
         Dado um cliente que deseja visualizar os detalhes do pedido montado anteriormente
         Quando sistema consulta o pedido

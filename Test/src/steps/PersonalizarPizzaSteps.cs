@@ -1,7 +1,6 @@
 using TechTalk.SpecFlow;
 using System;
 using NUnit.Framework;
-using Webapi.Domain.Repositorys.Abstract;
 using Webapi.Domain.Repositorys.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using Webapi.Enums;
@@ -17,40 +16,16 @@ namespace Test.src.steps
     public class PersonalizarPizzaSteps
     {
         private MassaDadosBuilder MassaBuilder { get; set; }
-        private IPedidoRepository PedidoRepository { get; set; }
-        private IModoPreparoRepository ModoPreparoRepository { get; set; }
-        private IItemPrecoRepository ItemPrecoRepository { get; set; }
-      
-        private ISaborRepository SaborRepository { get; set; }
         private IActionResult Result { get; set; }
-        private IItemAdicionalRepository ItemAdicionalRepository { get; set; }
-
         private void Inicializar()
         {
             this.MassaBuilder = new MassaDadosBuilder();
-            this.PedidoRepository = new PedidoRepository();
-            this.ModoPreparoRepository = new ModoPreparoRepository();
-            this.ItemPrecoRepository = new ItemPrecoRepository();
-            this.SaborRepository = new SaborRepository();
-            this.ItemAdicionalRepository = new ItemAdicionalRepository();
+            this.MassaBuilder.Inicializar();
          }
 
         private void Destruir()
         {
-            if(this.MassaBuilder.Pedido.ItensAdicionais != null){
-
-                foreach(var item in this.MassaBuilder.Pedido.ItensAdicionais)
-                {
-                    this.ItemAdicionalRepository.RemoverPorId(item.Id);
-                }
-            }
-            this.PedidoRepository.RemoverPorId(this.MassaBuilder.Pedido.Id);
-            this.ModoPreparoRepository.RemoverPorId(this.MassaBuilder.ModoPreparo.Id);
-            this.SaborRepository.RemoverPorId(this.MassaBuilder.Sabor.Id);
-            foreach(var item in this.MassaBuilder.ItensPrecos)
-            {
-                this.ItemPrecoRepository.RemoverPorId(item.Id);
-            }
+            this.MassaBuilder.Destruir();
         }
 
         [Given(@"um cliente que montou sua pizza com tamanho e sabor")]
@@ -58,47 +33,27 @@ namespace Test.src.steps
         {
             Inicializar();
 
-           this.MassaBuilder.MontarItemPreco((int)TipoItemPreco.ModoPreparo, 40);
-           var itemPreco = this.MassaBuilder.ItensPrecos.First();
-           var itemPrecoId = this.ItemPrecoRepository.Adicionar(itemPreco);
-           itemPreco.Id = itemPrecoId;
-
-           this.MassaBuilder.MontarSabor("Baiana");
-           var saborId = this.SaborRepository.Adicionar(this.MassaBuilder.Sabor);
-           this.MassaBuilder.Sabor.Id = saborId;
-
-           this.MassaBuilder.MontarModoPreparo(itemPrecoId, (int)TamanhoPizza.Grande, saborId); 
-           var modoPreparoId = this.ModoPreparoRepository.Adicionar(this.MassaBuilder.ModoPreparo);
-           this.MassaBuilder.ModoPreparo.Id = modoPreparoId;  
-
-           this.MassaBuilder.MontarPedido(itemPreco.Valor, saborId, this.MassaBuilder.ModoPreparo);           
+           this.MassaBuilder.MontarESalvarItemPreco((int)TipoItemPreco.ModoPreparo, 40)
+                            .MontarESalvarSabor("Baiana")
+                            .MontarESalvarModoPreparo(this.MassaBuilder.ItensPrecos.First().Id, (int)TamanhoPizza.Grande, this.MassaBuilder.Sabor.Id) 
+                            .MontarPedido(this.MassaBuilder.ItensPrecos.First().Valor, this.MassaBuilder.Sabor.Id, this.MassaBuilder.ModoPreparo);           
         }
 
         [Given(@"que personalizou seu pedido adicionando itens tornando única pizza")]
         public void GivenQuePersonalizouSeuPedidoAdicionandoItensTornandoUnicaPizza()
-        {                     
-           var pedidoId = this.PedidoRepository.Adicionar(this.MassaBuilder.Pedido);
-           this.MassaBuilder.Pedido.Id = pedidoId;
-
-           this.MassaBuilder.MontarItemPreco((int)TipoItemPreco.Adicional, 5);
-           var itemPreco = this.MassaBuilder.ItensPrecos.Last();
-           itemPreco.Id = this.ItemPrecoRepository.Adicionar(itemPreco);
-
-           this.MassaBuilder.MontarItemAdicionais(itemPreco.Id);
-           foreach(var item in this.MassaBuilder.ItensAdicionais)
-           {              
-                this.ItemAdicionalRepository.Adicionar(item);
-           }
-
-           this.MassaBuilder.MontarPedido(this.MassaBuilder.Pedido, this.MassaBuilder.ItensPrecos, this.MassaBuilder.ItensAdicionais);
+        {    
+           this.MassaBuilder.MontarESalvarPedido(this.MassaBuilder.ItensPrecos.First().Valor, this.MassaBuilder.Sabor.Id, this.MassaBuilder.ModoPreparo)                 
+                            .MontarESalvarItemPreco((int)TipoItemPreco.Adicional, 5)
+                            .MontarESalvarItemAdicionais(this.MassaBuilder.ItensPrecos.Last().Id, 5)
+                            .MontarPedido(this.MassaBuilder.Pedido, this.MassaBuilder.ItensPrecos, this.MassaBuilder.ItensAdicionais);
         }
 
         [When(@"sistema salva a personalizacao do pedido")]
         public void WhenSistemaSalvaAPersonalizacaoDoPedido()
         {
-            var service = new PedidoService(this.PedidoRepository, this.ModoPreparoRepository, 
-                                            this.ItemPrecoRepository, this.ItemAdicionalRepository,
-                                            this.SaborRepository);
+            var service = new PedidoService(new PedidoRepository(), new ModoPreparoRepository(), 
+                                            new ItemPrecoRepository(), new ItemAdicionalRepository(),
+                                            new SaborRepository());
             
             var controller = new PedidoController(service);
             this.Result = controller.Put(this.MassaBuilder.Pedido); 
@@ -115,10 +70,10 @@ namespace Test.src.steps
             
             foreach(var item in this.MassaBuilder.ItensAdicionais)
             {
-                var adicional = this.ItemAdicionalRepository.BuscarPorId(item.Id);
+                var adicional = this.MassaBuilder.ConsultarItemAdicional(item.Id);
                 itensAdicionais.Add(adicional);
 
-                var itemPreco = this.ItemPrecoRepository.BuscarPorId(item.ItemPreco.Id);
+                var itemPreco = this.MassaBuilder.ConsultarItemPreco(item.ItemPreco.Id);
                 itensPrecos.Add(itemPreco);
             }
 
@@ -159,9 +114,9 @@ namespace Test.src.steps
         [When(@"sistema salva o pedido")]
         public void ThenOsistemaSalvaOpedido()
         {
-            var service = new PedidoService(this.PedidoRepository, this.ModoPreparoRepository, 
-                                            this.ItemPrecoRepository, this.ItemAdicionalRepository,
-                                            this.SaborRepository);
+            var service = new PedidoService(new PedidoRepository(), new ModoPreparoRepository(), 
+                                            new ItemPrecoRepository(), new ItemAdicionalRepository(),
+                                            new SaborRepository());
             
             var controller = new PedidoController(service);
             this.Result = controller.Post(this.MassaBuilder.Pedido); 
@@ -170,8 +125,8 @@ namespace Test.src.steps
         [Then(@"com o mesmo valor e tempo de preparo da montagem da pizza")]
         public void ThenComOmesmoValorEtempoDePreparoDaMontagemDaPizza()
         {
-            var modoPreparo = this.ModoPreparoRepository.BuscarPorId(this.MassaBuilder.Pedido.ModoPreparo.Id);
-            var itemPreco = this.ItemPrecoRepository.BuscarPorId(modoPreparo.ItemPreco.Id);
+            var modoPreparo = this.MassaBuilder.ConsultarModoPreparo(this.MassaBuilder.Pedido.ModoPreparo.Id);
+            var itemPreco = this.MassaBuilder.ConsultarItemPreco(modoPreparo.ItemPreco.Id);
 
             bool mesmoValor = this.MassaBuilder.Pedido.Valor == itemPreco.Valor;
             bool mesmoTempoDePreparo = this.MassaBuilder.ModoPreparo.TempoDePreparo == modoPreparo.TempoDePreparo;

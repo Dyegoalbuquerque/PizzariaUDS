@@ -12,7 +12,7 @@ namespace Webapi.Data
     {
         private static string producao = $"Data/Database/";
         private static string teste = $"../../../../Webapi/Data/Database/";
-        public static string Caminho = producao;
+        public static string Caminho = teste;
         public Dao()
         {
             this.Fonte = $"{Caminho}{typeof(T).Name}.json";
