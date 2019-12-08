@@ -10,9 +10,9 @@ namespace Webapi.Data
 {
     public class Dao<T> where T : Entity
     {
-        private static string producao = $"Data/Database/";
-        private static string teste = $"../../../../Webapi/Data/Database/";
-        public static string Caminho = teste;
+        private static string Producao = $"Data/Database/Producao/";
+        private static string Teste = $"../../../../Webapi/Data/Database/Teste/";
+        public static string Caminho = Teste;
         public Dao()
         {
             this.Fonte = $"{Caminho}{typeof(T).Name}.json";
