@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PedidoService {
 
-  ApiUrl='https://localhost:5001/Api/Pedido';    
+  ApiUrl='http://localhost:5001/Api/Pedido';    
   constructor(private httpclient: HttpClient) { }    
     
   GetAll():Observable<Pedido[]>{    

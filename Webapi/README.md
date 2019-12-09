@@ -8,7 +8,7 @@ Executar `dotnet build` para buildar o projeto.
 
 ## Running
 
-Executar `dotnet run` para executar o projeto.
+Executar `dotnet run` para executar o projeto. 
 
 ## Configure
 
@@ -17,3 +17,8 @@ Para configurar o ambiente de produção antes de executar o projeto, no arquivo
 ## Swagger 
 
 Como ambiente de documentação da api, está configurado com o framework swagger na versão 4.0.1, ao executar a aplicação no passo 'Running' basta ir no endereço https://localhost:porta/swagger que irá visualizar a documentação da api.
+
+## Docker
+
+Para configurar o ambiente no container, execute `dotnet publish -o ./dist` para gerar build da aplicação, depois execute o comando `docker build -t webapi-mac:1.0 .` para criar a imagem. Depois execute `docker container run -p 5001:80 webapi-mac:1.0` para executar no container.
+(Não esquecer de colocar `http` nos services da aplicação angular)

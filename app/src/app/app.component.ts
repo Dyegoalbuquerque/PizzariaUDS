@@ -125,7 +125,7 @@ ShowValorAdicional(item: ItemAdicional): number {
  }
 
  ClickAvancarMontarPizza(){
- 
+
    if(this.selecionouTamanho && this.selecionouSabor){
      
     this.naoPodeAvancar = false;

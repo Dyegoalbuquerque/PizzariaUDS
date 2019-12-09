@@ -6,9 +6,9 @@ import { ItemAdicional } from '../models/ItemAdicional';
 @Injectable({
   providedIn: 'root'
 })
-export class ItemAdicionalService {
+export class ItemAdicionalService{
 
-  ApiUrl='https://localhost:5001/Api/ItemAdicional';    
+  ApiUrl='http://localhost:5001/Api/ItemAdicional';    
   constructor(private httpclient: HttpClient) { }    
     
   GetAll():Observable<ItemAdicional[]>{    

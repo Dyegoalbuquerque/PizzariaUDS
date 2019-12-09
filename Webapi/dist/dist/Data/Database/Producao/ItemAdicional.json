@@ -1,0 +1,38 @@
+[
+  {
+    "Nome": "Extra bacon",
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 1
+    },
+    "TempoDePreparo": 0,
+    "UrlImagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFd4Li2TePscpGW_14I3AGuwSDQG7hdc0hHPS-zMrmd4OLI3iE&amp;s",
+    "Id": 1
+  },
+  {
+    "Nome": "Borda recheada",
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 2
+    },
+    "TempoDePreparo": 5,
+    "UrlImagem": "https://static.wixstatic.com/media/8c597f_10938d50f53047d7bfe2a01202753d32~mv2.png/v1/crop/x_0,y_1,w_300,h_298/fill/w_200,h_200,al_c,usm_0.66_1.00_0.01/1515215112121.png",
+    "Id": 2
+  },
+  {
+    "Nome": "Sem cebola",
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 12
+    },
+    "TempoDePreparo": 0,
+    "UrlImagem": "https://image.freepik.com/icones-gratis/cebola_318-9718.jpg",
+    "Id": 3
+  }
+]

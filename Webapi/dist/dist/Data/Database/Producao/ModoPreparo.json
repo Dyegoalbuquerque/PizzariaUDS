@@ -1,0 +1,716 @@
+[
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 1
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 3
+    },
+    "Inativo": false,
+    "Descricao": "Faça uma cova no meio da farinha depois de peneirada com o fermento e o sal. Acrescente a água e o óleo. Amasse bem e abra com o rolo, formando uma massa lisa. JUnte uma fôrma para pizza (grande) e modele a massa dentro. Despeje sobre a massa um pouco de molho de tomate, cubra com queijo e presunto. Em seguida coloque as fatias de tomate, o ovo picado e a cebola. Decore com azeitonas, tempere com orégano e tempero verde e leve ao forno pré-aquecido por 20 minutos, ou até a massa ficar assada.",
+    "Tamanho": 1,
+    "TempoDePreparo": 25,
+    "ModoPreparoIngredientes": [
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 1
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 2
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 3
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 4
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 5
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 6
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 7
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 8
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 9
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 10
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 11
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 12
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 13
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 14
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 15
+      }
+    ],
+    "Id": 1
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 1
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 4
+    },
+    "Inativo": false,
+    "Descricao": "Faça uma cova no meio da farinha depois de peneirada com o fermento e o sal. Acrescente a água e o óleo. Amasse bem e abra com o rolo, formando uma massa lisa. JUnte uma fôrma para pizza (média) e modele a massa dentro. Despeje sobre a massa um pouco de molho de tomate, cubra com queijo e presunto. Em seguida coloque as fatias de tomate, o ovo picado e a cebola. Decore com azeitonas, tempere com orégano e tempero verde e leve ao forno pré-aquecido por 20 minutos, ou até a massa ficar assada.",
+    "Tamanho": 2,
+    "TempoDePreparo": 20,
+    "ModoPreparoIngredientes": [
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 16
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 17
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 18
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 19
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 20
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 21
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 22
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 23
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 24
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 25
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 26
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 27
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 28
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 29
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 30
+      }
+    ],
+    "Id": 2
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 1
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 5
+    },
+    "Inativo": false,
+    "Descricao": "Faça uma cova no meio da farinha depois de peneirada com o fermento e o sal. Acrescente a água e o óleo. Amasse bem e abra com o rolo, formando uma massa lisa. JUnte uma fôrma para pizza (pequena) e modele a massa dentro. Despeje sobre a massa um pouco de molho de tomate, cubra com queijo e presunto. Em seguida coloque as fatias de tomate, o ovo picado e a cebola. Decore com azeitonas, tempere com orégano e tempero verde e leve ao forno pré-aquecido por 20 minutos, ou até a massa ficar assada.",
+    "Tamanho": 3,
+    "TempoDePreparo": 15,
+    "ModoPreparoIngredientes": [
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 31
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 32
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 33
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 34
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 35
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 36
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 37
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 38
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 39
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 40
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 41
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 42
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 43
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 44
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 45
+      }
+    ],
+    "Id": 3
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 2
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 6
+    },
+    "Inativo": false,
+    "Descricao": "Dissolva o fermento na água morna, adicione o óleo, o sal e misture. Acrescente as farinhas, aos poucos, mexendo com uma colher até soltar da lateral da vasilha. Sove por 5 minutos ou até obter uma massa lisa e macia. Forme uma bola, cubra e deixe descansar por 1 hora ou até dobrar de volume. Abra a massa com a ajuda de um rolo sobre uma superfície enfarinhada, formando um disco de 32cm de diâmetro. Com ajuda de um saco de confeiteiro faça um fio de requeijão em todo o diâmetro da borda, dobre a massa fazendo a borda recheada. Transfira para uma assadeira untada e fure ligeiramente com um garfo. Espalhe o molho e leve ao forno alto, preaquecido, por 10 minutos. Cubra com a mussarela, a calabresa e a cebola. Asse por mais 10 minutos ou até dourar levemente. Decore com azeitonas, polvilhe com orégano e sirva.",
+    "Tamanho": 1,
+    "TempoDePreparo": 25,
+    "ModoPreparoIngredientes": [
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 46
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 47
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 48
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 49
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 50
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 51
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 52
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 53
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 54
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 55
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 56
+      }
+    ],
+    "Id": 4
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 2
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 7
+    },
+    "Inativo": false,
+    "Descricao": "Dissolva o fermento na água morna, adicione o óleo, o sal e misture. Acrescente as farinhas, aos poucos, mexendo com uma colher até soltar da lateral da vasilha. Sove por 5 minutos ou até obter uma massa lisa e macia. Forme uma bola, cubra e deixe descansar por 1 hora ou até dobrar de volume. Abra a massa com a ajuda de um rolo sobre uma superfície enfarinhada, formando um disco de 20cm de diâmetro. Com ajuda de um saco de confeiteiro faça um fio de requeijão em todo o diâmetro da borda, dobre a massa fazendo a borda recheada. Transfira para uma assadeira untada e fure ligeiramente com um garfo. Espalhe o molho e leve ao forno alto, preaquecido, por 10 minutos. Cubra com a mussarela, a calabresa e a cebola. Asse por mais 10 minutos ou até dourar levemente. Decore com azeitonas, polvilhe com orégano e sirva.",
+    "Tamanho": 2,
+    "TempoDePreparo": 20,
+    "ModoPreparoIngredientes": [
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 57
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 58
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 59
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 60
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 61
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 62
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 63
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 64
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 65
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 66
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 67
+      }
+    ],
+    "Id": 5
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 2
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 8
+    },
+    "Inativo": false,
+    "Descricao": "Dissolva o fermento na água morna, adicione o óleo, o sal e misture. Acrescente as farinhas, aos poucos, mexendo com uma colher até soltar da lateral da vasilha. Sove por 5 minutos ou até obter uma massa lisa e macia. Forme uma bola, cubra e deixe descansar por 1 hora ou até dobrar de volume. Abra a massa com a ajuda de um rolo sobre uma superfície enfarinhada, formando um disco de 12cm de diâmetro. Com ajuda de um saco de confeiteiro faça um fio de requeijão em todo o diâmetro da borda, dobre a massa fazendo a borda recheada. Transfira para uma assadeira untada e fure ligeiramente com um garfo. Espalhe o molho e leve ao forno alto, preaquecido, por 10 minutos. Cubra com a mussarela, a calabresa e a cebola. Asse por mais 10 minutos ou até dourar levemente. Decore com azeitonas, polvilhe com orégano e sirva.",
+    "Tamanho": 3,
+    "TempoDePreparo": 15,
+    "ModoPreparoIngredientes": [
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 68
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 69
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 70
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 71
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 72
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 73
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 74
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 75
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 76
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 77
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 78
+      }
+    ],
+    "Id": 6
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 3
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 9
+    },
+    "Inativo": false,
+    "Descricao": "Num recipiente, dissolva o fermento num pouco de água e deixe descansar por 5 minutos. Misture a farinha e o sal numa bacia. Faça um buraco no centro, adicione o fermento dissolvido e, aos poucos, a água morna. Misture tudo com as mãos até formar uma massa lisa.Se for preciso, acrescente mais farinha. Trabalhe a massa por cerca de 15 minutos. Faça uma bola e deixe descansar numa vasilha coberta com papel filme por 1 hora, ou até que a massa dobre de volume. Para saber quando cresceu o suficiente, coloque uma bolinha (de 2 cm) da própria massa dentro de um copo de água, quando subir à superfície está pronta para a próxima etapa. Em seguida, trabalhe a massa vigorosamente por mais 10 minutos. Divida em quatro bolas iguais (para pizzas grandes) e deixe crescer por mais 1 hora. Está pronta para abrir e assar.",
+    "Tamanho": 1,
+    "TempoDePreparo": 30,
+    "ModoPreparoIngredientes": [
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 79
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 80
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 81
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 82
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 83
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 84
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 85
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 86
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 87
+      }
+    ],
+    "Id": 7
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 3
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 10
+    },
+    "Inativo": false,
+    "Descricao": "Num recipiente, dissolva o fermento num pouco de água e deixe descansar por 5 minutos. Misture a farinha e o sal numa bacia. Faça um buraco no centro, adicione o fermento dissolvido e, aos poucos, a água morna. Misture tudo com as mãos até formar uma massa lisa.Se for preciso, acrescente mais farinha. Trabalhe a massa por cerca de 15 minutos. Faça uma bola e deixe descansar numa vasilha coberta com papel filme por 1 hora, ou até que a massa dobre de volume. Para saber quando cresceu o suficiente, coloque uma bolinha (de 2 cm) da própria massa dentro de um copo de água, quando subir à superfície está pronta para a próxima etapa. Em seguida, trabalhe a massa vigorosamente por mais 10 minutos. Divida em quatro bolas iguais (para pizzas médias) e deixe crescer por mais 1 hora. Está pronta para abrir e assar.",
+    "Tamanho": 2,
+    "TempoDePreparo": 25,
+    "ModoPreparoIngredientes": [
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 88
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 89
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 90
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 91
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 92
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 93
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 94
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 95
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 96
+      }
+    ],
+    "Id": 8
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 3
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 11
+    },
+    "Inativo": false,
+    "Descricao": "Num recipiente, dissolva o fermento num pouco de água e deixe descansar por 5 minutos. Misture a farinha e o sal numa bacia. Faça um buraco no centro, adicione o fermento dissolvido e, aos poucos, a água morna. Misture tudo com as mãos até formar uma massa lisa.Se for preciso, acrescente mais farinha. Trabalhe a massa por cerca de 15 minutos. Faça uma bola e deixe descansar numa vasilha coberta com papel filme por 1 hora, ou até que a massa dobre de volume. Para saber quando cresceu o suficiente, coloque uma bolinha (de 2 cm) da própria massa dentro de um copo de água, quando subir à superfície está pronta para a próxima etapa. Em seguida, trabalhe a massa vigorosamente por mais 10 minutos. Divida em quatro bolas iguais (para pizzas pequenas) e deixe crescer por mais 1 hora. Está pronta para abrir e assar.",
+    "Tamanho": 3,
+    "TempoDePreparo": 20,
+    "ModoPreparoIngredientes": [
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 97
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 98
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 99
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 100
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 101
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 102
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 103
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 104
+      },
+      {
+        "ModoPreparoId": 0,
+        "IngredienteId": 0,
+        "Id": 105
+      }
+    ],
+    "Id": 9
+  }
+]

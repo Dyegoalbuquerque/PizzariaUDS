@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ModoPreparoService {
 
-  ApiUrl='https://localhost:5001/Api/ModoPreparo';    
+  ApiUrl='http://localhost:5001/Api/ModoPreparo';    
   constructor(private httpclient: HttpClient) { }    
     
   GetAll():Observable<ModoPreparo[]>{    

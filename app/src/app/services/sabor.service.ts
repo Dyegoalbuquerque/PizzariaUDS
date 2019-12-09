@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class SaborService {
 
-  ApiUrl='https://localhost:5001/Api/Sabor';    
+  ApiUrl='http://localhost:5001/Api/Sabor';    
   constructor(private httpclient: HttpClient) { }    
     
   GetAll():Observable<Sabor[]>{    

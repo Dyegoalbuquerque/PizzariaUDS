@@ -1,0 +1,242 @@
+[
+  {
+    "Status": 1,
+    "Valor": 45.0,
+    "TempoPreparo": 25,
+    "Data": "2019-12-08T12:23:26.359354-03:00",
+    "ModoPreparo": {
+      "Sabor": {
+        "Nome": null,
+        "UrlImagem": null,
+        "Observacao": null,
+        "Id": 1
+      },
+      "ItemPreco": null,
+      "Inativo": false,
+      "Descricao": null,
+      "Tamanho": 1,
+      "TempoDePreparo": 0,
+      "ModoPreparoIngredientes": null,
+      "Id": 1
+    },
+    "Quantidade": 1,
+    "ItensAdicionais": [
+      {
+        "Nome": null,
+        "ItemPreco": null,
+        "TempoDePreparo": 0,
+        "UrlImagem": null,
+        "Id": 1
+      }
+    ],
+    "Id": 1
+  },
+  {
+    "Status": 1,
+    "Valor": 45.0,
+    "TempoPreparo": 25,
+    "Data": "2019-12-08T12:23:26.359354-03:00",
+    "ModoPreparo": {
+      "Sabor": {
+        "Nome": null,
+        "UrlImagem": null,
+        "Observacao": null,
+        "Id": 1
+      },
+      "ItemPreco": null,
+      "Inativo": false,
+      "Descricao": null,
+      "Tamanho": 1,
+      "TempoDePreparo": 0,
+      "ModoPreparoIngredientes": null,
+      "Id": 1
+    },
+    "Quantidade": 1,
+    "ItensAdicionais": [
+      {
+        "Nome": null,
+        "ItemPreco": null,
+        "TempoDePreparo": 0,
+        "UrlImagem": null,
+        "Id": 1
+      }
+    ],
+    "Id": 2
+  },
+  {
+    "Status": 1,
+    "Valor": 40.0,
+    "TempoPreparo": 25,
+    "Data": "2019-12-08T12:23:26.524872-03:00",
+    "ModoPreparo": {
+      "Sabor": {
+        "Nome": null,
+        "UrlImagem": null,
+        "Observacao": null,
+        "Id": 3
+      },
+      "ItemPreco": null,
+      "Inativo": false,
+      "Descricao": null,
+      "Tamanho": 1,
+      "TempoDePreparo": 0,
+      "ModoPreparoIngredientes": null,
+      "Id": 3
+    },
+    "Quantidade": 1,
+    "ItensAdicionais": null,
+    "Id": 3
+  },
+  {
+    "Status": 1,
+    "Valor": 45.0,
+    "TempoPreparo": 25,
+    "Data": "2019-12-08T12:27:33.452758-03:00",
+    "ModoPreparo": {
+      "Sabor": {
+        "Nome": null,
+        "UrlImagem": null,
+        "Observacao": null,
+        "Id": 5
+      },
+      "ItemPreco": null,
+      "Inativo": false,
+      "Descricao": null,
+      "Tamanho": 1,
+      "TempoDePreparo": 0,
+      "ModoPreparoIngredientes": null,
+      "Id": 5
+    },
+    "Quantidade": 1,
+    "ItensAdicionais": [
+      {
+        "Nome": null,
+        "ItemPreco": null,
+        "TempoDePreparo": 0,
+        "UrlImagem": null,
+        "Id": 3
+      }
+    ],
+    "Id": 4
+  },
+  {
+    "Status": 1,
+    "Valor": 45.0,
+    "TempoPreparo": 25,
+    "Data": "2019-12-08T12:27:33.452758-03:00",
+    "ModoPreparo": {
+      "Sabor": {
+        "Nome": null,
+        "UrlImagem": null,
+        "Observacao": null,
+        "Id": 5
+      },
+      "ItemPreco": null,
+      "Inativo": false,
+      "Descricao": null,
+      "Tamanho": 1,
+      "TempoDePreparo": 0,
+      "ModoPreparoIngredientes": null,
+      "Id": 5
+    },
+    "Quantidade": 1,
+    "ItensAdicionais": [
+      {
+        "Nome": null,
+        "ItemPreco": null,
+        "TempoDePreparo": 0,
+        "UrlImagem": null,
+        "Id": 3
+      }
+    ],
+    "Id": 5
+  },
+  {
+    "Status": 1,
+    "Valor": 40.0,
+    "TempoPreparo": 25,
+    "Data": "2019-12-08T12:27:33.561578-03:00",
+    "ModoPreparo": {
+      "Sabor": {
+        "Nome": null,
+        "UrlImagem": null,
+        "Observacao": null,
+        "Id": 7
+      },
+      "ItemPreco": null,
+      "Inativo": false,
+      "Descricao": null,
+      "Tamanho": 1,
+      "TempoDePreparo": 0,
+      "ModoPreparoIngredientes": null,
+      "Id": 7
+    },
+    "Quantidade": 1,
+    "ItensAdicionais": null,
+    "Id": 6
+  },
+  {
+    "Status": 1,
+    "Valor": 45.0,
+    "TempoPreparo": 25,
+    "Data": "2019-12-08T12:38:06.466815-03:00",
+    "ModoPreparo": {
+      "Sabor": {
+        "Nome": null,
+        "UrlImagem": null,
+        "Observacao": null,
+        "Id": 9
+      },
+      "ItemPreco": null,
+      "Inativo": false,
+      "Descricao": null,
+      "Tamanho": 1,
+      "TempoDePreparo": 0,
+      "ModoPreparoIngredientes": null,
+      "Id": 9
+    },
+    "Quantidade": 1,
+    "ItensAdicionais": [
+      {
+        "Nome": null,
+        "ItemPreco": null,
+        "TempoDePreparo": 0,
+        "UrlImagem": null,
+        "Id": 5
+      }
+    ],
+    "Id": 7
+  },
+  {
+    "Status": 1,
+    "Valor": 45.0,
+    "TempoPreparo": 25,
+    "Data": "2019-12-08T12:38:58.369827-03:00",
+    "ModoPreparo": {
+      "Sabor": {
+        "Nome": null,
+        "UrlImagem": null,
+        "Observacao": null,
+        "Id": 9
+      },
+      "ItemPreco": null,
+      "Inativo": false,
+      "Descricao": null,
+      "Tamanho": 1,
+      "TempoDePreparo": 0,
+      "ModoPreparoIngredientes": null,
+      "Id": 9
+    },
+    "Quantidade": 1,
+    "ItensAdicionais": [
+      {
+        "Nome": null,
+        "ItemPreco": null,
+        "TempoDePreparo": 0,
+        "UrlImagem": null,
+        "Id": 5
+      }
+    ],
+    "Id": 8
+  }
+]

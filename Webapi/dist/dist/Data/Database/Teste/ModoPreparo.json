@@ -1,0 +1,162 @@
+[
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 1
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 1
+    },
+    "Inativo": false,
+    "Descricao": null,
+    "Tamanho": 1,
+    "TempoDePreparo": 25,
+    "ModoPreparoIngredientes": null,
+    "Id": 1
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 2
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 3
+    },
+    "Inativo": false,
+    "Descricao": null,
+    "Tamanho": 1,
+    "TempoDePreparo": 25,
+    "ModoPreparoIngredientes": null,
+    "Id": 2
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 3
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 4
+    },
+    "Inativo": false,
+    "Descricao": null,
+    "Tamanho": 1,
+    "TempoDePreparo": 25,
+    "ModoPreparoIngredientes": null,
+    "Id": 3
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 4
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 6
+    },
+    "Inativo": false,
+    "Descricao": null,
+    "Tamanho": 1,
+    "TempoDePreparo": 25,
+    "ModoPreparoIngredientes": null,
+    "Id": 4
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 5
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 7
+    },
+    "Inativo": false,
+    "Descricao": null,
+    "Tamanho": 1,
+    "TempoDePreparo": 25,
+    "ModoPreparoIngredientes": null,
+    "Id": 5
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 6
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 9
+    },
+    "Inativo": false,
+    "Descricao": null,
+    "Tamanho": 1,
+    "TempoDePreparo": 25,
+    "ModoPreparoIngredientes": null,
+    "Id": 6
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 7
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 10
+    },
+    "Inativo": false,
+    "Descricao": null,
+    "Tamanho": 1,
+    "TempoDePreparo": 25,
+    "ModoPreparoIngredientes": null,
+    "Id": 7
+  },
+  {
+    "Sabor": {
+      "Nome": null,
+      "UrlImagem": null,
+      "Observacao": null,
+      "Id": 8
+    },
+    "ItemPreco": {
+      "DataCadastro": "0001-01-01T00:00:00",
+      "Tipo": 0,
+      "Valor": 0.0,
+      "Id": 12
+    },
+    "Inativo": false,
+    "Descricao": null,
+    "Tamanho": 1,
+    "TempoDePreparo": 25,
+    "ModoPreparoIngredientes": null,
+    "Id": 8
+  }
+]
