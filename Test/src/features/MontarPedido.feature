@@ -6,7 +6,7 @@
 # Somente exibir o tempo total de preparo no resumo do pedido.
 
 Funcionalidade: Montar pedido
-        Sendo um cliente​ ​do sistema da pizzaria UDS, eu quero visualizar os detalhes do meu pedido e 
+        Sendo um cliente​ ​do sistema da pizzaria, eu quero visualizar os detalhes do meu pedido e 
         saber o preço final e o tempo de preparo. 
         O objetivo é saber o quanto irei gastar e em quanto tempo a pizza ficará pronta.
  
